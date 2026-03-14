@@ -26,9 +26,64 @@
       <Platform>ARM64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DosLinkDev.cpp" />
+    <ClCompile Include="EditCC.cpp" />
+    <ClCompile Include="IldevBase.cpp" />
+    <ClCompile Include="Ildisp.cpp" />
+    <ClCompile Include="Ildrive.cpp" />
+    <ClCompile Include="Ilper.cpp" />
+    <ClCompile Include="ILSetup.cpp" />
+    <ClCompile Include="IntLoop.cpp" />
+    <ClCompile Include="LoopCfg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="Mnemo.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Pilbox.cpp" />
+    <ClCompile Include="TcpIp.cpp" />
+    <ClCompile Include="TextSvr.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DosLinkDev.h" />
+    <ClInclude Include="EditCC.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="IL.h" />
+    <ClInclude Include="IldevBase.h" />
+    <ClInclude Include="Ildisp.h" />
+    <ClInclude Include="Ildrive.h" />
+    <ClInclude Include="Ilper.h" />
+    <ClInclude Include="ILSetup.h" />
+    <ClInclude Include="Interface.h" />
+    <ClInclude Include="IntLoop.h" />
+    <ClInclude Include="LoopCfg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="Mnemo.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Pilbox.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TcpIp.h" />
+    <ClInclude Include="TextSvr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Ilper.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Ilper.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Ilper.rc2" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
-    <ProjectGuid>{4B985BCB-27FA-F24B-74AB-245F805460C4}</ProjectGuid>
+    <ProjectGuid>{30498BAC-77C2-4954-AE44-379D12F3EC27}</ProjectGuid>
     <Keyword>MFCProj</Keyword>
     <RootNamespace>Ilper3</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
@@ -266,61 +321,6 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="DosLinkDev.h" />
-    <ClInclude Include="EditCC.h" />
-    <ClInclude Include="framework.h" />
-    <ClInclude Include="IL.h" />
-    <ClInclude Include="IldevBase.h" />
-    <ClInclude Include="Ildisp.h" />
-    <ClInclude Include="Ildrive.h" />
-    <ClInclude Include="Ilper.h" />
-    <ClInclude Include="ILSetup.h" />
-    <ClInclude Include="Interface.h" />
-    <ClInclude Include="IntLoop.h" />
-    <ClInclude Include="LoopCfg.h" />
-    <ClInclude Include="MainFrm.h" />
-    <ClInclude Include="Mnemo.h" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="Pilbox.h" />
-    <ClInclude Include="Resource.h" />
-    <ClInclude Include="targetver.h" />
-    <ClInclude Include="TcpIp.h" />
-    <ClInclude Include="TextSvr.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="DosLinkDev.cpp" />
-    <ClCompile Include="EditCC.cpp" />
-    <ClCompile Include="IldevBase.cpp" />
-    <ClCompile Include="Ildisp.cpp" />
-    <ClCompile Include="Ildrive.cpp" />
-    <ClCompile Include="Ilper.cpp" />
-    <ClCompile Include="ILSetup.cpp" />
-    <ClCompile Include="IntLoop.cpp" />
-    <ClCompile Include="LoopCfg.cpp" />
-    <ClCompile Include="MainFrm.cpp" />
-    <ClCompile Include="Mnemo.cpp" />
-    <ClCompile Include="pch.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="Pilbox.cpp" />
-    <ClCompile Include="TcpIp.cpp" />
-    <ClCompile Include="TextSvr.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="Ilper.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="res\Ilper.rc2" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="res\Ilper.ico" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -4,6 +4,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Ilper3/Ilper3.vcxproj" />
-  <Project Path="IlperGER/IlperGER.vcxproj" Id="ff033e3c-5434-43f8-b6c7-7b739dc648e7" />
+  <Project Path="IlPer/IlPer.vcxproj" Id="30498bac-77c2-4954-ae44-379d12f3ec27" />
+  <Project Path="IlperFRA/IlperFRA.vcxproj" Id="ff033e3c-5434-43f8-b6c7-7b739dc648e7" />
 </Solution>
