@@ -1,5 +1,5 @@
 ILPer version 2.50
-Original Version from C. Giesselink : https://hp.giesselink.com/HPIL
+Original Version from C. Giesselink : https://hp.giesselink.com/hpil.htm
 
 New release :
 - Resizable main Window
